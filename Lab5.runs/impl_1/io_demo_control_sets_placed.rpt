@@ -1,0 +1,86 @@
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
+| Date         : Wed Feb 12 23:19:00 2025
+| Host         : comp541-1sp25-kalebw02.cs.unc.edu running 64-bit Ubuntu 22.04.5 LTS
+| Command      : report_control_sets -verbose -file io_demo_control_sets_placed.rpt
+| Design       : io_demo
+| Device       : xc7a100t
+-------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |     8 |
+|    Minimum number of control sets                        |     8 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    30 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |     8 |
+| >= 0 to < 4        |     0 |
+| >= 4 to < 6        |     2 |
+| >= 6 to < 8        |     0 |
+| >= 8 to < 10       |     1 |
+| >= 10 to < 12      |     1 |
+| >= 12 to < 14      |     1 |
+| >= 14 to < 16      |     0 |
+| >= 16              |     3 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              22 |            6 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              52 |           13 |
+| Yes          | No                    | No                     |              31 |            9 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |               9 |            3 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++----------------+----------------------------+----------------------------+------------------+----------------+--------------+
+|  Clock Signal  |        Enable Signal       |      Set/Reset Signal      | Slice Load Count | Bel Load Count | Bels / Slice |
++----------------+----------------------------+----------------------------+------------------+----------------+--------------+
+|  clk_IBUF_BUFG | keyb/bits                  | keyb/count0                |                1 |              4 |         4.00 |
+|  clk_IBUF_BUFG | keyb/keyb_char[15]_i_1_n_0 | keyb/keyb_char[31]_i_1_n_0 |                2 |              5 |         2.50 |
+|  clk_IBUF_BUFG | keyb/keyb_char[15]_i_1_n_0 |                            |                3 |              9 |         3.00 |
+|  clk_IBUF_BUFG | keyb/bits[9]_i_1_n_0       |                            |                4 |             10 |         2.50 |
+|  clk_IBUF_BUFG | keyb/count0                |                            |                2 |             12 |         6.00 |
+|  clk_IBUF_BUFG |                            | keyb/clear                 |                5 |             20 |         4.00 |
+|  clk_IBUF_BUFG |                            |                            |                6 |             22 |         3.67 |
+|  clk_IBUF_BUFG |                            | snd/count0_carry__2_n_0    |                8 |             32 |         4.00 |
++----------------+----------------------------+----------------------------+------------------+----------------+--------------+
+
+

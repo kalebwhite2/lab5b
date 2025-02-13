@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Wed Feb 12 23:17:01 2025
+# Process ID: 90188
+# Current directory: /home/kalebw02/VivadoLabs/Lab5/Lab5.runs/synth_1
+# Command line: vivado -log io_demo.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source io_demo.tcl
+# Log file: /home/kalebw02/VivadoLabs/Lab5/Lab5.runs/synth_1/io_demo.vds
+# Journal file: /home/kalebw02/VivadoLabs/Lab5/Lab5.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source io_demo.tcl -notrace
