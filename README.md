@@ -4,6 +4,6 @@
 
 2. There's twice as many digits, so to light up each digit at the same frequency, each digit would have to be lit half as long. Dividing the previous calculation by 2 gives 0.655ms.
 
-3. 29. F029.
+3. h'29. h'F029.
   
 4. floor(100e6 / 1174.66Hz) = 85131. 
